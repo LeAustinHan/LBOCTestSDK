@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.test
                        DESC
 
-  s.homepage         = 'https://github.com/314456527@qq.com/LBOCTestSDK'
+  s.homepage         = 'https://github.com/LeAustinHan/LBOCTestSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '314456527@qq.com' => '314456527@qq.com' }
-  s.source           = { :git => 'https://github.com/314456527@qq.com/LBOCTestSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/LeAustinHan/LBOCTestSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
