@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.test
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LBOCTestSDK/Classes/**/*'
+  s.source_files = 'LBOCTestSDK/Classes/*'
   
   # s.resource_bundles = {
   #   'LBOCTestSDK' => ['LBOCTestSDK/Assets/*.png']
