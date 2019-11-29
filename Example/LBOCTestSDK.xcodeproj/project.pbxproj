@@ -65,7 +65,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8862F0AD0F620F684E583A48 /* Pods-LBOCTestSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBOCTestSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LBOCTestSDK_Tests/Pods-LBOCTestSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A88FBE858CD88EB3C077353D /* Pods-LBOCTestSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBOCTestSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-LBOCTestSDK_Example/Pods-LBOCTestSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		B3693E4848A6C42966051771 /* LBOCTestSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBOCTestSDK.podspec; path = ../LBOCTestSDK.podspec; sourceTree = "<group>"; };
+		B3693E4848A6C42966051771 /* LBOCTestSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LBOCTestSDK.podspec; path = ../LBOCTestSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DDBCAB4F663538E402D753FB /* Pods-LBOCTestSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBOCTestSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-LBOCTestSDK_Example/Pods-LBOCTestSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
