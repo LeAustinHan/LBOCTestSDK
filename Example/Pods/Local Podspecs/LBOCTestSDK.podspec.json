@@ -1,0 +1,22 @@
+{
+  "name": "LBOCTestSDK",
+  "version": "0.1.0",
+  "summary": "A short description of LBOCTestSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/314456527@qq.com/LBOCTestSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "314456527@qq.com": "314456527@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/314456527@qq.com/LBOCTestSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LBOCTestSDK/Classes/**/*"
+}
