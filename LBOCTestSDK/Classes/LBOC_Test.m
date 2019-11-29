@@ -10,4 +10,8 @@
 
 @implementation LBOC_Test
 
+- (void)testFunction:(NSString *)infoString{
+    NSLog(@"test project == %@",infoString);
+}
+
 @end

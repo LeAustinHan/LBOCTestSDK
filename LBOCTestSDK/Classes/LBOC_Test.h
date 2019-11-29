@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LBOC_Test : NSObject
 
+- (void)testFunction:(NSString *)infoString;
+
 @end
 
 NS_ASSUME_NONNULL_END
