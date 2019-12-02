@@ -29,3 +29,5 @@ pod 'LBOCTestSDK'
 LBOCTestSDK is available under the MIT license. See the LICENSE file for more info.
 
 ##这个库用于地图功能的开发
+
+实现功能，需要工程文件设置相应的权限，如有需要设置打开地图应用的白名单。
