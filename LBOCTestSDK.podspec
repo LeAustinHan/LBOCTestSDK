@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBOCTestSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A test project of LBOCTestSDK. test'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.test
+  TODO: Add long description of the pod here.test for LBOC Project
                        DESC
 
   s.homepage         = 'https://github.com/LeAustinHan/LBOCTestSDK'
@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.test
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'CoreLocation'
+  #s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
