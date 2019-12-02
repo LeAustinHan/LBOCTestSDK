@@ -21,7 +21,7 @@ it, simply add the following line to your Podfile:
 NSLocationAlwaysUsageDescription我们的App需要通过您所在的地理位置获取地址信息
 NSLocationWhenInUseUsageDescription我们的App需要通过您所在的地理位置获取地址信息
 
-##设置打开地图应用的白名单
+## 设置打开地图应用的白名单
 ‘<key>LSApplicationQueriesSchemes</key>
     <array>
         <string>iosamap</string>
