@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBOCTestSDK'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A test project of LBOCTestSDK. test'
 
 # This description is used to generate tags and improve search results.
@@ -30,14 +30,29 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LBOCTestSDKCode/Classes/*'
-  
+  #s.source_files = 'LBOCTestSDKCode/Classes/*'
   # s.resource_bundles = {
   #   'LBOCTestSDK' => ['LBOCTestSDKCode/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit', 'CoreLocation','MapKit'
+  
   #s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'AppleLocationMap' do |applelocationmap|
+  applelocationmap.source_files = 'LBOCTestSDKCode/AppleLocationMap/*'
+  applelocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit'
+  #  applelocationmap.dependency 'AFNetworking', '~> 3.0'
+  #  applelocationmap.dependency 'YYModel
+  end
+  
+  s.subspec 'BaiduLocationMap' do |baidulocationmap|
+  baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
+  baidulocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit'
+  baidulocationmap.dependency 'MBProgressHUD'
+  #  applelocationmap.dependency 'YYModel
+  end
+  
+  
 end
