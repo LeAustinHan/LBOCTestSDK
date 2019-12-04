@@ -42,14 +42,14 @@ Pod::Spec.new do |s|
   
   s.subspec 'AppleLocationMap' do |applelocationmap|
   applelocationmap.source_files = 'LBOCTestSDKCode/AppleLocationMap/*'
-  applelocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit'
+  applelocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit','Foundation'
   #  applelocationmap.dependency 'AFNetworking', '~> 3.0'
   #  applelocationmap.dependency 'YYModel
   end
   
   s.subspec 'BaiduLocationMap' do |baidulocationmap|
   baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
-  baidulocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit'
+  baidulocationmap.frameworks = 'UIKit'
   baidulocationmap.dependency 'AFNetworking'
   end
   
