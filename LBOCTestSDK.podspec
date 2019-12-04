@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   s.subspec 'BaiduLocationMap' do |baidulocationmap|
   baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
   baidulocationmap.frameworks = 'UIKit', 'CoreLocation','MapKit'
-  baidulocationmap.dependency 'MBProgressHUD'
+  baidulocationmap.dependency = 'MBProgressHUD'
   #  applelocationmap.dependency 'YYModel
   end
   
