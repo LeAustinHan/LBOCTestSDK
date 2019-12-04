@@ -57,6 +57,7 @@ static LBOCHappyLocationManager *_singleInstance = nil;
         self.locationManager.distanceFilter = 1000.0f;//距离过滤
         [self.locationManager requestAlwaysAuthorization];//位置权限申请
         [self.locationManager startUpdatingLocation];//开始定位
+        [self.locationManager startUpdatingHeading];
         return YES;
     }else {
         return NO;
