@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBOCTestSDK'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A test project of LBOCTestSDK. test'
 
 # This description is used to generate tags and improve search results.
@@ -57,26 +57,6 @@ Pod::Spec.new do |s|
   baidulocationmap.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
   
   baidulocationmap.pod_target_xcconfig = {
-      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
-      'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
-      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
-      'ENABLE_BITCODE'           => 'NO'
-  }
-
-  end
-  s.subspec 'ALLLocationMap' do |alllocationmap|
-  alllocationmap.source_files = 'LBOCTestSDKCode/AppleLocationMap/*','LBOCTestSDKCode/BaiduLocationMap/*'
-  
-  alllocationmap.frameworks   = 'UIKit',"CoreLocation", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
-  alllocationmap.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
-  
-  alllocationmap.dependency 'MBProgressHUD'
-  alllocationmap.dependency 'BaiduMapKit'
-  alllocationmap.dependency 'BMKLocationKit'
-  #alllocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
-  #alllocationmap.public_header_files = 'LBOCTestSDKCode/BaiduLocationMap/BMKPrefixHeader.pch'
-  
-  alllocationmap.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
       'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
       'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
