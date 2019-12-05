@@ -7,7 +7,7 @@
 //
 
 #import "LBOCBDViewController+Route.h"
-#import "MBProgressHUD+PD.h"
+//#import "MBProgressHUD+PD.h"
 
 
 
@@ -69,7 +69,7 @@
         //delete []temppoints;
         [self mapViewFitPolyLine:polyLine];
     } else {
-        [MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
+        //[MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
     }
 }
 
@@ -140,7 +140,7 @@
         [self.mapView addOverlay:polyLine]; // 添加路线overlay
         [self mapViewFitPolyLine:polyLine];
     } else {
-        [MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
+        //[MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
     }
 }
 
@@ -200,7 +200,7 @@
         [self.mapView addOverlay:polyLine]; // 添加路线overlay  delete []temppoints;
         [self mapViewFitPolyLine:polyLine];
     } else {
-        [MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
+        //[MBProgressHUD showError:@"位置暂时不确定，无法进行规划路线"];
     }
 }
 

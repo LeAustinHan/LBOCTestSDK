@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBOCTestSDK'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'A test project of LBOCTestSDK. test'
 
 # This description is used to generate tags and improve search results.
@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   s.subspec 'BaiduLocationMap' do |baidulocationmap|
   baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
   #baidulocationmap.frameworks = 'UIKit'
-  baidulocationmap.dependency 'MBProgressHUD'
+  #baidulocationmap.dependency 'MBProgressHUD'
   baidulocationmap.dependency 'BaiduMapKit'
   baidulocationmap.dependency 'BMKLocationKit'
   #baidulocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   
   
   
-  alllocationmap.dependency 'MBProgressHUD'
+  #alllocationmap.dependency 'MBProgressHUD'
   alllocationmap.dependency 'BaiduMapKit'
   alllocationmap.dependency 'BMKLocationKit'
   #alllocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
