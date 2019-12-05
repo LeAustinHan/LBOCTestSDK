@@ -47,11 +47,15 @@ Pod::Spec.new do |s|
   #可以设置多个数据源，可以是包含关系
   s.subspec 'BaiduLocationMap' do |baidulocationmap|
   baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
-  baidulocationmap.frameworks = 'UIKit'
+  #baidulocationmap.frameworks = 'UIKit'
   baidulocationmap.dependency 'MBProgressHUD'
   baidulocationmap.dependency 'BaiduMapKit'
   baidulocationmap.dependency 'BMKLocationKit'
   #baidulocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
+  
+  baidulocationmap.frameworks   = 'UIKit',"CoreLocation", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
+  baidulocationmap.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
+  
   baidulocationmap.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
       'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
@@ -62,17 +66,19 @@ Pod::Spec.new do |s|
   end
   s.subspec 'ALLLocationMap' do |alllocationmap|
   alllocationmap.source_files = 'LBOCTestSDKCode/AppleLocationMap/*','LBOCTestSDKCode/BaiduLocationMap/*'
-  alllocationmap.frameworks = 'UIKit'
+  
+  alllocationmap.frameworks   = 'UIKit',"CoreLocation", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
+  alllocationmap.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
+  
   alllocationmap.dependency 'MBProgressHUD'
   alllocationmap.dependency 'BaiduMapKit'
   alllocationmap.dependency 'BMKLocationKit'
   #alllocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
-  alllocationmap.public_header_files = 'LBOCTestSDKCode/BaiduLocationMap/BMKPrefixHeader.pch'
+  #alllocationmap.public_header_files = 'LBOCTestSDKCode/BaiduLocationMap/BMKPrefixHeader.pch'
   
   alllocationmap.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
       'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
-      #'HEADER_SEARCH_PATHS'      => search_paths.join(' '),
       'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
       'ENABLE_BITCODE'           => 'NO'
   }
