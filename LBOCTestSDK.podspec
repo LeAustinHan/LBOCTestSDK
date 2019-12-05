@@ -34,8 +34,6 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {
   #   'LBOCTestSDK' => ['LBOCTestSDKCode/Assets/*.png']
   # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   
   #s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
@@ -46,11 +44,39 @@ Pod::Spec.new do |s|
   #  applelocationmap.dependency 'AFNetworking', '~> 3.0'
   #  applelocationmap.dependency 'YYModel
   end
-  
+  #可以设置多个数据源，可以是包含关系
   s.subspec 'BaiduLocationMap' do |baidulocationmap|
   baidulocationmap.source_files = 'LBOCTestSDKCode/BaiduLocationMap/*'
   baidulocationmap.frameworks = 'UIKit'
-  baidulocationmap.dependency 'AFNetworking'
+  baidulocationmap.dependency 'MBProgressHUD'
+  baidulocationmap.dependency 'BaiduMapKit'
+  baidulocationmap.dependency 'BMKLocationKit'
+  #baidulocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
+  baidulocationmap.pod_target_xcconfig = {
+      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
+      'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
+      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
+      'ENABLE_BITCODE'           => 'NO'
+  }
+
+  end
+  s.subspec 'ALLLocationMap' do |alllocationmap|
+  alllocationmap.source_files = 'LBOCTestSDKCode/AppleLocationMap/*','LBOCTestSDKCode/BaiduLocationMap/*'
+  alllocationmap.frameworks = 'UIKit'
+  alllocationmap.dependency 'MBProgressHUD'
+  alllocationmap.dependency 'BaiduMapKit'
+  alllocationmap.dependency 'BMKLocationKit'
+  #alllocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
+  alllocationmap.public_header_files = 'LBOCTestSDKCode/BaiduLocationMap/BMKPrefixHeader.pch'
+  
+  alllocationmap.pod_target_xcconfig = {
+      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
+      'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
+      #'HEADER_SEARCH_PATHS'      => search_paths.join(' '),
+      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -ObjC',
+      'ENABLE_BITCODE'           => 'NO'
+  }
+
   end
   
   
