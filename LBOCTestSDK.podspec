@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LBOCTestSDK'
-  s.version          = '0.2.5'
+  s.version          = '0.2.6'
   s.summary          = 'A test project of LBOCTestSDK. test'
 
 # This description is used to generate tags and improve search results.
@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   #baidulocationmap.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
   
   baidulocationmap.frameworks   = "CoreLocation","OpenGLES", "QuartzCore", "Security", "SystemConfiguration",'UIKit', 'MapKit','Foundation',"CoreGraphics","AdSupport","CoreTelephony","MobileCoreServices"
-  baidulocationmap.libraries    = "sqlite3.0", "c++", "crypto","ssl","z"
+  baidulocationmap.libraries    = "sqlite3.0", "stdc++.6.0.9", "crypto","ssl","z"
   
   baidulocationmap.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #alllocationmap.ios.vendored_library  = "libcrypto.a","libssl.a"
   #alllocationmap.public_header_files = 'LBOCTestSDKCode/BaiduLocationMap/BMKPrefixHeader.pch'
   alllocationmap.frameworks   = "CoreLocation","OpenGLES", "QuartzCore", "Security", "SystemConfiguration",'UIKit', 'MapKit','Foundation',"CoreGraphics","AdSupport","CoreTelephony","MobileCoreServices"
-  alllocationmap.libraries    = "sqlite3.0", "c++", "crypto","ssl","z"
+  alllocationmap.libraries    = "sqlite3.0", "stdc++.6.0.9", "crypto","ssl","z"
   
   alllocationmap.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
