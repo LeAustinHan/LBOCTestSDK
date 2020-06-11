@@ -1,42 +1,35 @@
 PODS:
-  - Expecta (1.0.6)
-  - "Expecta+Snapshots (3.1.1)":
-    - Expecta (~> 1.0)
-    - FBSnapshotTestCase/Core (~> 2.0)
-    - Specta (~> 1.0)
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - LBOCTestSDK (0.1.0)
-  - Specta (1.0.7)
+  - LBOCTestSDK (0.2.13):
+    - SDWebImage
+    - YYKit
+    - YYModel
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - Expecta
-  - "Expecta+Snapshots"
-  - FBSnapshotTestCase
   - LBOCTestSDK (from `../`)
-  - Specta
 
 SPEC REPOS:
   trunk:
-    - Expecta
-    - "Expecta+Snapshots"
-    - FBSnapshotTestCase
-    - Specta
+    - SDWebImage
+    - YYKit
+    - YYModel
 
 EXTERNAL SOURCES:
   LBOCTestSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  "Expecta+Snapshots": dcff217eef506dabd6dfdc7864ea2da321fafbb8
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  LBOCTestSDK: dc31be02e7bef9373c240dbb77df1c6678b0078f
-  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  LBOCTestSDK: 2b21eda6b37d22ef47b41577a40982620bef948d
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 84323e21e3eba21d9ee251444b969a9c8f096a59
+PODFILE CHECKSUM: 062ded1e90dd9df8243eedd7a71c442fffa20eca
 
 COCOAPODS: 1.8.4

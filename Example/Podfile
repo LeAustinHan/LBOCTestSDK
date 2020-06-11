@@ -1,16 +1,11 @@
 use_frameworks!
 
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 target 'LBOCTestSDK_Example' do
   pod 'LBOCTestSDK', :path => '../'
 
   target 'LBOCTestSDK_Tests' do
     inherit! :search_paths
-
-    pod 'Specta'
-    pod 'Expecta'
-    pod 'FBSnapshotTestCase'
-    pod 'Expecta+Snapshots'
   end
 end
