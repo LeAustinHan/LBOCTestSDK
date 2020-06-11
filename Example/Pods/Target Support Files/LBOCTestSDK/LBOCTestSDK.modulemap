@@ -1,6 +1,0 @@
-framework module LBOCTestSDK {
-  umbrella header "LBOCTestSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}
